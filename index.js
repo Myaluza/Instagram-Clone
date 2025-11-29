@@ -28,3 +28,24 @@ const posts = [
     }
 ]
 
+const mainEL = document.getElementById("main")
+
+for (let i = 0; i < posts.length; i++) {
+    mainEL.innerHTML += `<section>
+                <div class="profile-info">
+                    <img src="${posts[i].avatar}" class="profile-pic">
+                    <div class="profile-text">
+                        <p class="bold">${posts[i].name}</p>
+                        <p>${posts[i].location}</p>
+                    </div>
+                </div>
+                <img src="${posts[i].post}" class="post-img">
+                <div class="post-actions">
+                    <img src="images/icon-heart.png" id="likes${i}">
+                    <img src="images/icon-comment.png">
+                    <img src="images/icon-dm.png">
+                </div>
+                <p class="bold">${posts[i].likes} likes</p>
+                <p class="post-comment"><span class="bold">${posts[i].username}</span> ${posts[i].comment}</p>
+            </section>`
+}

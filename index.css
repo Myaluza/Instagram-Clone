@@ -3,3 +3,61 @@ html, body {
     padding: 0;
 }
 
+body {
+    width: 375px;
+}
+
+p {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0%;
+    line-height: 100%;
+    padding-left: 8px;
+}
+
+.bold {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+    line-height:0%
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 67px;
+    border-bottom: 1px solid #c6c6c6;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+}
+
+.post-img {
+    width: 375px;
+    height: 375px;
+}
+
+.profile-info {
+    height: 55px;
+    padding: 16px;
+    display: flex;
+}
+
+.post-actions img {
+    width: 25px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.post-actions img:hover, .post-actions img.focus {
+    opacity: 0.5;
+}
+
+.post-comment {
+    margin-top: 20px;
+}
